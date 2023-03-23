@@ -1,0 +1,26 @@
+name: Run Tests and check if coverage passes
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - "*.md"
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Test project
+        run: npm run test:coverage
