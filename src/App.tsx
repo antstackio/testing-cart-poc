@@ -17,6 +17,11 @@ function App() {
               Add Two Numbers
             </a>
           </li>
+          <li className="nav-list-item">
+            <a className="nav-list-link" href="/add/three">
+              Add Three Numbers
+            </a>
+          </li>
         </ul>
       </nav>
       <RouterProvider router={createBrowserRouter(routes)} />
