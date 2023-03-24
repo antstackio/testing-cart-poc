@@ -9,7 +9,7 @@ function App() {
         <ul className="nav-list">
           <li className="nav-list-item">
             <a className="nav-list-link" href="/">
-              Home
+              Index
             </a>
           </li>
           <li className="nav-list-item">
