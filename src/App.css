@@ -5,3 +5,22 @@
   text-align: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.nav-list-item {
+  margin: 0 1rem;
+}
+.nav-list-link {
+  text-decoration: none;
+}

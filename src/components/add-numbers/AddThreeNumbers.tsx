@@ -3,9 +3,10 @@ import { add } from "./utils";
 
 type Props = {};
 
-const AddTwoNumbers = (props: Props) => {
+const AddThreeNumbers = (props: Props) => {
   const [firstNumber, setFirstNumber] = useState(0);
   const [secondNumber, setSecondNumber] = useState(0);
+  const [thirdNumber, setThirdNumber] = useState(0);
   return (
     <div>
       <label htmlFor="number-one">Number One</label>
@@ -22,9 +23,16 @@ const AddTwoNumbers = (props: Props) => {
         value={secondNumber}
         onChange={(e) => setSecondNumber(Number(e.target.value))}
       />
-      <div>{add(firstNumber, secondNumber)}</div>
+      <label htmlFor="number-three">Number Three</label>
+      <input
+        id="number-three"
+        type="number"
+        value={thirdNumber}
+        onChange={(e) => setThirdNumber(Number(e.target.value))}
+      />
+      <div>{add(firstNumber, secondNumber, thirdNumber)}</div>
     </div>
   );
 };
 
-export default AddTwoNumbers;
+export default AddThreeNumbers;
